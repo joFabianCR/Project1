@@ -9,6 +9,9 @@ struct Prestamo {
     int plazo;
 };
 
+/**
+* Esta funcion calcula la cuota con base en las caracteristicas del prestamo
+**/
 float cuota(Prestamo prestamo) {
     return (prestamo.monto * (prestamo.tasaInteres / 100)) / (1 - pow(1 + (prestamo.tasaInteres / 100), -prestamo.plazo));
 }
@@ -31,4 +34,4 @@ int main() {
     return 0;
 }
 
-FABIAN SE LA COME
+//Bayron se la come 
